@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HW5</title>
+    <title>HW6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -73,7 +73,7 @@
             Еффективні рішення <br />
             для вашого бізнесу
           </h1>
-          <button class="button hero-button" type="button" data-modal-open>
+          <button class="button button--hero" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -415,8 +415,8 @@
             </li>
           </ul>
         </div>
-        <div class="footer-social-block">
-          <p class="slogan"><em>Приєднуйтесь</em></p>
+        <div class="footer-social">
+          <p class="slogan"><em class="slogan-em">Приєднуйтесь</em></p>
           <ul class="social-list">
             <li class="social-list-item">
               <a class="social-link" href="#">
@@ -448,6 +448,22 @@
             </li>
           </ul>
         </div>
+        <form class = "subscribe" name="subscribe" action="#" autocomplete="on" novalidate>
+          <label class ="slogan" for="subscribe-mail">
+            <em class="slogan-em">Підпишиться на розсилку</em>
+          </label>
+          <div class="grow">
+          <input class="subscribe--input" id="subscribe-mail" type="email" name="email" placeholder="E-mail">
+          <button type="submit" class="button button--subscribe">Підписатися
+            <span>
+              <svg class="svg subscribe--svg">
+                <use href="./image/svg/symbol.svg#icon-send"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -457,6 +473,7 @@
             <use href="./image/svg/symbol.svg#backdrop-icon-close"> </use>
           </svg>
         </button>
+        <form class=""action="#" name="backdrop" autocomplete="on"></form>
       </div>
     </div>
     <script src="./js/modal.js">
