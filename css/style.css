@@ -4,6 +4,7 @@
   --secondary-bc: #f5f4fa;
   --hero-footer-bc: #2f303a;
   --white-in-progect: #ffffff;
+  
 
   /* animation color */
   --primary-activ-color: #2196f3;
@@ -18,8 +19,9 @@
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   /* backdrop */
   --backdrop-bgc: rgba(0, 0, 0, 0.2);
-
-
+  /* form */
+  --hight-input: 40px;
+ 
 }
 
 h1,
@@ -223,10 +225,13 @@ body {
 
 .button--hero { 
   padding: 10px 32px;
+}
+
+.button--active{
   transition: background-color var(--primamy-transition-time) var(--cubic);
 }
 
-.button--hero:hover {
+.button--active:hover {
   background-color: #188ce8;
   }
 
@@ -495,21 +500,17 @@ body {
 .subscribe--input{
   height: 50px;
   padding: 0 0 0 16px;
+  background-color: transparent;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.25;
   flex-grow: 1;
- 
+  color: var(--contact-text);
 }
 
-.subscribe--input::placeholder{
- color: var(--contact-text);
- font-size: 16px;
-  line-height: 1.25;
-
-}
 
 .button--subscribe{
   padding: 10px 28px 10px 29px;
@@ -527,9 +528,6 @@ body {
   fill: #ececec;
   
 }
-
-
-
 
 .button-list {
   display: flex;
@@ -587,7 +585,6 @@ body {
   height: 100%;
   background-color:var(--primary-activ-color);
  
-
   transform: translateY(100%);
   transition: transform var(--primamy-transition-time) var(--cubic);
 }
@@ -685,7 +682,7 @@ body {
   
 }
 
-.backdrop-close{
+.backdrop--close{
   position: absolute;
   right: 8px;
   top: 8px;
@@ -700,9 +697,131 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius : 50%;
   color: #000;
+
+  transition: color var(--primamy-transition-time) var(--cubic);
 }
-.backdrop-close .icon.svg{
+.backdrop--icon.svg{
   display: block;
   width: 11px;
   height: 11px;
+}
+
+.backdrop--close:hover .backdrop--icon.svg{
+  color: var(--primary-activ-color);
+}
+
+/* baddrop form*/
+
+.form{
+  padding: 40px;
+ 
+}
+.form--title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+ 
+}
+.form--fild{
+  margin-bottom: 10px; 
+
+}
+
+.form--label{
+  display: block;
+  color: var(--secondary-text-color);
+  margin-bottom: 4px;
+}
+.form--input-container{
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+.form--input-contact{
+  height: var(--hight-input);
+  padding-left: 42px;
+  
+}
+.form--input{
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  outline: none;
+  transition: border-color var(--primamy-transition-time) var(--cubic);
+ }
+ .form--input:focus+.form--svg{
+  color: var(--primary-activ-color);
+ }
+ .form--input:focus{
+  border-color: var(--primary-activ-color);
+  }
+
+ .form--textarea{
+    resize: none;
+    height: calc(3*var(--hight-input));
+    padding: 12px 16px;
+    margin-bottom: 20px;
+ }
+ .form--textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+ }
+
+.form--svg{
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  transition: color var(--primamy-transition-time) var(--cubic);
+}
+
+.check{
+  margin-bottom: 30px;
+  line-height: 1.71;
+ }
+
+ .check--label{
+   display: flex;
+   align-items: center;
+ }
+.check--input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+}
+.check--icon{
+  display: inline-block;
+  margin-right: 8.38px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.check--input:checked+.check--icon{
+  background-image: url(../image/svg/icon-check.svg);
+  background-color: var(--primary-activ-color);
+  border-color: var(--primary-activ-color);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.form--button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:10px 56px;
+}
+.check--link{
+  color: var(--primary-activ-color);
+  text-decoration: underline;
 }

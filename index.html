@@ -73,7 +73,7 @@
             Еффективні рішення <br />
             для вашого бізнесу
           </h1>
-          <button class="button button--hero" type="button" data-modal-open>
+          <button class="button button--hero button--active" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
@@ -468,12 +468,54 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="content-box">
-        <button class="backdrop-close button" type="button" data-modal-close>
-          <svg class="icon svg">
+        <button class="backdrop--close button" type="button" data-modal-close>
+          <svg class="backdrop--icon svg">
             <use href="./image/svg/symbol.svg#backdrop-icon-close"> </use>
           </svg>
         </button>
-        <form class=""action="#" name="backdrop" autocomplete="on"></form>
+        <form class="form"action="#" name="backdrop" autocomplete="on">
+          <p class="form--title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form--field">
+            <label class="form--label" for="form--name">Ім'я</label>
+            <div class="form--input-container">
+              <input class="form--input form--input-contact" type="text" id="form--name" name="form--name">
+              <svg class="svg form--svg">
+                <use href="./image/svg/symbol.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form--field">
+            <label class="form--label" for="form--tel">Телефон</label>
+            <div class="form--input-container">
+              <input class="form--input form--input-contact" type="tel" id="form--tel" name="form--tel">
+              <svg class="svg form--svg">
+                <use href="./image/svg/symbol.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form--field">
+            <label class="form--label" for="form--mail">Пошта</label>
+            <div class="form--input-container">
+              <input class="form--input form--input-contact" type="email" id="form--mail" name="form--mail">
+              <svg class="svg form--svg">
+                <use href="./image/svg/symbol.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form--field">
+            <label class="form--label" for="form--comment">Коментарі</label>
+            <textarea class="form--textarea form--input" id="form--comment" name="form--comment" placeholder="Ввдіть текст"></textarea>
+          </div>
+          
+          <div class="check">
+            <label for="check--input" class="check--label">
+              <input type="checkbox" id="check--input" name="check--input" value="permission" class="check--input">
+              <span class="check--icon"></span> 
+                Соглашаюсь с рассылкой и принимаю <a class="check--link">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="button form--button button--active">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js">
