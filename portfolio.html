@@ -218,63 +218,81 @@
     </section>
   </main>
    
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-contact-block">
-          <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
-          <ul class="footer-list">
-            <li>
-              <address class="item address">
-                м. Київ, пр-т Лесі Українки, 26
-              </address>
-            </li>
-            <li>
-              <a href="mailto:info@exampleo.com" class="item contact-link">
-                info@example.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+380991111111" class="item contact-link">
-                +38 099 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-social-block">
-          <p class="slogan"><em>Приєднуйтесь</em></p>
-          <ul class="social-list">
-            <li class="social-list-item">
-              <a class="social-link" href="#">
-                <svg class="social-svg svg">
-                  <use href="./image/svg/symbol.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="#">
-                <svg class="social-svg svg">
-                  <use href="./image/svg/symbol.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="#">
-                <svg class="social-svg svg">
-                  <use href="./image/svg/symbol.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="social-link" href="#">
-                <svg class="social-svg svg">
-                  <use href="./image/svg/symbol.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-contact-block">
+        <a href="./index.html" class="logo"
+          >Web<span class="logo-studio">Studio</span></a
+        >
+        <ul class="footer-list">
+          <li>
+            <address class="item address">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
+          </li>
+          <li>
+            <a href="mailto:info@exampleo.com" class="item contact-link">
+              info@example.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+380991111111" class="item contact-link">
+              +38 099 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer-social">
+        <p class="slogan"><em class="slogan-em">Приєднуйтесь</em></p>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-link" href="#">
+              <svg class="social-svg svg">
+                <use href="./image/svg/symbol.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social-svg svg">
+                <use href="./image/svg/symbol.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social-svg svg">
+                <use href="./image/svg/symbol.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <svg class="social-svg svg">
+                <use href="./image/svg/symbol.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class = "subscribe" name="subscribe" action="#" autocomplete="on" novalidate>
+        <label class ="slogan" for="subscribe-mail">
+          <em class="slogan-em">Підпишиться на розсилку</em>
+        </label>
+        <div class="grow">
+        <input class="subscribe--input" id="subscribe-mail" type="email" name="email" placeholder="E-mail">
+        <button type="submit" class="button button--subscribe">Підписатися
+          <span>
+            <svg class="svg subscribe--svg">
+              <use href="./image/svg/symbol.svg#icon-send"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      </form>
+    </div>
+  </footer>
     <script src="./js/modal.js">
     </script>
 </body>
