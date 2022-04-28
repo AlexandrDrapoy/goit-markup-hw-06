@@ -785,6 +785,7 @@ body {
 
 .check{
   margin-bottom: 30px;
+  margin-left: 14px;
   line-height: 1.71;
  }
 
@@ -796,10 +797,11 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
    appearance: none;
+   
 }
 .check--icon{
   display: inline-block;
-  margin-left: 12px;
+  
   margin-right: 8.38px;
   width: 16px;
   height: 15px;
@@ -807,7 +809,7 @@ body {
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: margin-left var(--primamy-transition-time) var(--contact-text);
+  
 }
 
 .check--input:checked+.check--icon{
@@ -816,8 +818,7 @@ body {
   border-color: var(--primary-activ-color);
   background-size: contain;
   background-origin: border-box;
-  margin-left: 14px;
-}
+  }
 
 .form--button{
   display: block;
