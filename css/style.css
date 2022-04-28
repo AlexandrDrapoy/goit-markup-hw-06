@@ -94,7 +94,7 @@ body {
   color: var(--primary-activ-color);
   margin-right: 93px;
 }
-.nav .logo-studio {
+.nav .logo__studio {
   color: var(--primary-text-color);
 }
 
@@ -438,7 +438,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer .logo-studio {
+.footer .logo__studio {
   color: var(--secondary-bc);
 }
 
@@ -731,6 +731,7 @@ body {
 
 .form--label{
   display: block;
+  font-size: 12px;
   color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
@@ -798,6 +799,7 @@ body {
 }
 .check--icon{
   display: inline-block;
+  margin-left: 12px;
   margin-right: 8.38px;
   width: 16px;
   height: 15px;
@@ -805,6 +807,7 @@ body {
   border: 2px solid #000000;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: margin-left var(--primamy-transition-time) var(--contact-text);
 }
 
 .check--input:checked+.check--icon{
@@ -813,6 +816,7 @@ body {
   border-color: var(--primary-activ-color);
   background-size: contain;
   background-origin: border-box;
+  margin-left: 14px;
 }
 
 .form--button{
